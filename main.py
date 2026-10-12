@@ -1,11 +1,19 @@
 print("Welcome to SmartCent!")
 
-income = 2500
-expenses = 1750
+name = input("What is your name? ")
+print("Hello,", name)
 
-balance = income - expenses
+try:
+    income_text = input("Enter income: ")
+    income = int(income_text)
 
-print("Income:", income)
-print("Expenses:", expenses)
-print("Balance:", balance)
+    expenses_text = input("Enter expenses: ")
+    expenses = int(expenses_text)
+except ValueError:
+    print("Invalid input. Please enter whole numbers only.")
+else:
+    balance = income - expenses
 
+    print("Income:", income)
+    print("Expenses:", expenses)
+    print("Balance:", balance)
