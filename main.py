@@ -7,6 +7,10 @@ def read_whole_number(prompt):
             print("Invalid input. Please enter a whole number.")
 
 
+def calculate_balance(income, expenses):
+    return income - expenses
+
+
 def main():
     print("Welcome to SmartCent!")
 
@@ -16,7 +20,7 @@ def main():
     income = read_whole_number("Enter income: ")
     expenses = read_whole_number("Enter expenses: ")
 
-    balance = income - expenses
+    balance = calculate_balance(income, expenses)
 
     print("Income:", income)
     print("Expenses:", expenses)
