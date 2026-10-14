@@ -7,16 +7,21 @@ def read_whole_number(prompt):
             print("Invalid input. Please enter a whole number.")
 
 
-print("Welcome to SmartCent!")
+def main():
+    print("Welcome to SmartCent!")
 
-name = input("What is your name? ")
-print("Hello,", name)
+    name = input("What is your name? ")
+    print("Hello,", name)
 
-income = read_whole_number("Enter income: ")
-expenses = read_whole_number("Enter expenses: ")
+    income = read_whole_number("Enter income: ")
+    expenses = read_whole_number("Enter expenses: ")
 
-balance = income - expenses
+    balance = income - expenses
 
-print("Income:", income)
-print("Expenses:", expenses)
-print("Balance:", balance)
+    print("Income:", income)
+    print("Expenses:", expenses)
+    print("Balance:", balance)
+
+
+if __name__ == "__main__":
+    main()
