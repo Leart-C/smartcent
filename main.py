@@ -21,14 +21,9 @@ def main():
 
     expenses = []
 
-    first_expense = read_whole_number("Enter expense 1: ")
-    expenses.append(first_expense)
-
-    second_expense = read_whole_number("Enter expense 2: ")
-    expenses.append(second_expense)
-
-    third_expense = read_whole_number("Enter expense 3: ")
-    expenses.append(third_expense)
+    for expense_number in range(1, 4):
+        expense = read_whole_number(f"Enter expense {expense_number}:")
+        expenses.append(expense)
 
     total_expenses = sum(expenses)
     balance = calculate_balance(income, total_expenses)
